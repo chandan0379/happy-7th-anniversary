@@ -505,29 +505,35 @@ setInterval(burstHearts,8000);
 
 console.log("❤️ Premium Anniversary Website Loaded ❤️");
 // ==========================
-// RESTART TO FIRST PAGE
+// START AGAIN
 // ==========================
 
-const restartBtn = document.getElementById("restartBtn");
+const restartBtn=document.getElementById("restartBtn");
 
 if(restartBtn){
 
-    restartBtn.addEventListener("click",()=>{
+restartBtn.onclick=function(){
 
-        pages[currentPage].classList.remove("active");
+document.getElementById("celebration").classList.remove("show");
 
-        currentPage = 0;
+document.querySelectorAll(".page").forEach(page=>{
 
-        pages[currentPage].classList.add("active");
+page.classList.remove("active");
 
-        window.scrollTo({
+});
 
-            top:0,
+currentPage=0;
 
-            behavior:"smooth"
+pages[0].classList.add("active");
 
-        });
+window.scrollTo({
 
-    });
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
 
 }
