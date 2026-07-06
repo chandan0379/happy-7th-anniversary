@@ -504,3 +504,30 @@ setInterval(burstHearts,8000);
 // =======================================================
 
 console.log("❤️ Premium Anniversary Website Loaded ❤️");
+// ==========================
+// RESTART TO FIRST PAGE
+// ==========================
+
+const restartBtn = document.getElementById("restartBtn");
+
+if(restartBtn){
+
+    restartBtn.addEventListener("click",()=>{
+
+        pages[currentPage].classList.remove("active");
+
+        currentPage = 0;
+
+        pages[currentPage].classList.add("active");
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
+
+}
