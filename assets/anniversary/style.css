@@ -2847,6 +2847,7 @@ margin:45px auto 0;
     position:relative;
     width:100%;
     height:100vh;
+
     overflow:hidden;
     display:flex;
     justify-content:center;
@@ -3216,4 +3217,69 @@ object-position:center 12%;
 
 }
 
+}
+/* =====================================
+   MOBILE HERO FIX
+===================================== */
+
+@media (max-width:768px){
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    height:auto;
+    padding:25px 0;
+}
+
+.hero-content{
+    position:relative;
+    inset:auto;
+    transform:none;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px 60px;
+}
+
+.hero-title{
+    font-size:58px;
+    line-height:1.1;
+}
+
+.hero-title span{
+    display:block;
+    margin:8px 0;
+}
+
+.hero-date{
+    font-size:28px;
+}
+
+.hero-subtitle{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:18px;
+}
+
+.hero-message p{
+    font-size:17px;
+    line-height:1.7;
+    margin:10px 0;
+}
+
+.hero-btn{
+    display:flex;
+    width:100%;
+    max-width:300px;
+    justify-content:center;
+
+    margin-top:30px;
+    margin-bottom:25px;
+
+    padding:16px 20px;
+    font-size:18px;
+}
 }
